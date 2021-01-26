@@ -1,4 +1,5 @@
 """
+1
 Given a numeric sequence, create a list in which each number will be a digit from this input string. 
 Then use this list to calculate the running total, or cumulative sum. 
 Essentially, it's a new list of partial sums that gets updated every time a new element appears.
@@ -18,6 +19,7 @@ print(list2)
 
 
 """
+2
 For instance, if your string is 123, an average of 1 and 2 will be 1.5, and an average of 2 and 3 will be 2.5.
 Print the result. Notice that this list will have one less item.
 
@@ -33,3 +35,6 @@ num_list = input()
 new_num_list = [int(x) for x in num_list]
 av_num_list = [sum(new_num_list[y:y + 2]) / 2 for y in range(len(num_list) - 1)]
 print(av_num_list)
+
+# best answer
+# print([(int(n[i]) + int(n[i + 1])) / 2 for i in range(len(n) - 1)])
