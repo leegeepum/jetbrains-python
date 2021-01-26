@@ -38,3 +38,13 @@ print(av_num_list)
 
 # best answer
 # print([(int(n[i]) + int(n[i + 1])) / 2 for i in range(len(n) - 1)])
+
+"""
+3
+Select only students with the best grade ("A") and print their names in a list. 
+Do all this in one line. 
+We have already created the students variable with other names and grades.
+"""
+
+students = [["Jane", "B"], ["Kate", "B"], ["Alex", "C"], ["Elsa", "A"], ["Max", "B"], ["Chris", "A"]]
+print([student[0] for student in students if student[1] == "A"])
