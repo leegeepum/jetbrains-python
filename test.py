@@ -1,1 +1,2 @@
-print('Z' > 'a')
+name = input() * 2
+print(name)
