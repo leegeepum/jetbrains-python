@@ -33,7 +33,8 @@ Sample Output 1:
 num_list = input()
 
 new_num_list = [int(x) for x in num_list]
-av_num_list = [sum(new_num_list[y:y + 2]) / 2 for y in range(len(num_list) - 1)]
+av_num_list = [sum(new_num_list[y:y + 2]) /
+               2 for y in range(len(num_list) - 1)]
 print(av_num_list)
 
 # best answer
@@ -46,5 +47,15 @@ Do all this in one line.
 We have already created the students variable with other names and grades.
 """
 
-students = [["Jane", "B"], ["Kate", "B"], ["Alex", "C"], ["Elsa", "A"], ["Max", "B"], ["Chris", "A"]]
+students = [["Jane", "B"], ["Kate", "B"], ["Alex", "C"],
+            ["Elsa", "A"], ["Max", "B"], ["Chris", "A"]]
 print([student[0] for student in students if student[1] == "A"])
+
+"""
+complex one
+"""
+groups = ['1A', '1B', '1C', '2A', '2B', '2C', '3A', '3B', '3C']
+n = int(input())
+group_dict = {groups[i]: input() if i <
+              n else None for i in range(len(groups))}
+print(group_dict)
