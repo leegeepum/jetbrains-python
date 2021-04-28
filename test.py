@@ -1,7 +1,5 @@
-groups = ['1A', '1B', '1C', '2A', '2B', '2C', '3A', '3B', '3C']
+import datetime
 
-n = int(input())
-
-group_dict = {groups[i]: input() if i <
-              n else None for i in range(len(groups))}
-print(group_dict)
+now = datetime.datetime.now()
+print(now + datetime.timedelta(hours=5, minutes=30))
+print(now - datetime.timedelta(days=3))
